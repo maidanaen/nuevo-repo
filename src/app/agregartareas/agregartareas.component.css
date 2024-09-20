@@ -1,0 +1,50 @@
+/* Contenedor del input y botón */
+.tarea-input-container {
+  display: flex; /* Utiliza flexbox para alinear los elementos */
+  gap: 10px; /* Espacio entre el input y el botón */
+  margin: 20px 0; /* Espaciado superior e inferior */
+  flex-direction: row; /* Alinea el input y el botón en fila */
+}
+
+/* Estilo para el input */
+.tarea-input {
+  flex-grow: 1; /* Permite que el input crezca para ocupar el espacio disponible */
+  padding: 10px 15px; /* Espaciado interno del input */
+  font-size: 16px; /* Tamaño de la fuente del texto dentro del input */
+  border: 1px solid #ccc; /* Borde gris claro alrededor del input */
+  border-radius: 5px; /* Esquinas redondeadas del input */
+  outline: none; /* Elimina el borde de enfoque predeterminado */
+}
+
+/* Estilo para el botón */
+.tarea-button {
+  padding: 10px 20px; /* Espaciado interno del botón */
+  background-color: #09c5ac; /* Color de fondo azul */
+  color: white; /* Color del texto blanco */
+  border: none; /* Elimina el borde predeterminado */
+  border-radius: 5px; /* Esquinas redondeadas del botón */
+  font-size: 16px; /* Tamaño de la fuente del texto dentro del botón */
+  cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de fondo */
+}
+
+/* Cambia el color de fondo del botón cuando se pasa el cursor */
+.tarea-button:hover {
+  background-color: #7ab4ac; /* Fondo más oscuro cuando se pasa el cursor */
+}
+
+/* Asegura que el input y el botón se adapten bien en pantallas pequeñas */
+@media (max-width: 600px) {
+  .tarea-input-container {
+    flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+    align-items: stretch; /* Hace que el contenido ocupe todo el ancho disponible */
+  }
+
+  .tarea-input {
+    margin-bottom: 10px; /* Añade espacio debajo del input para separación */
+  }
+
+  .tarea-button {
+    width: 100%; /* El botón ocupa todo el ancho en pantallas pequeñas */
+  }
+}

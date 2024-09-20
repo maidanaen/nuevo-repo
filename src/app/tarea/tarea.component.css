@@ -1,0 +1,59 @@
+.tarea {
+  display: flex; /* Utiliza flexbox para organizar los elementos internos */
+  padding: 10px 15px; /* Espaciado interno para dar espacio alrededor del contenido */
+  margin-bottom: 10px; /* Espacio inferior para separar cada tarea */
+  border: 1px solid #ddd; /* Borde gris claro alrededor de la tarea */
+  border-radius: 8px; /* Esquinas redondeadas para un aspecto más suave */
+  background-color: #fefefe; /* Color de fondo blanco suave */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+  flex-direction: column; /* Organiza los elementos internos en una columna */
+  align-items: center; /* Centra los elementos horizontalmente dentro del contenedor */
+}
+
+
+h3 {
+  margin: 0; /* Eliminar margen por defecto */
+  font-size: 1.2rem; /* Tamaño de fuente */
+  color: #333; /* Color del texto */
+}
+
+h3.completada {
+  text-decoration: line-through; /* Tachado para tareas completadas */
+  color: gray; /* Color gris para tareas completadas */
+}
+.contenedor-button {
+  display: flex; /* Utiliza flexbox para alinear los botones horizontalmente */
+  justify-content: center; /* Centra los botones dentro del contenedor */
+  gap: 10px; /* Espacio entre los botones */
+  padding: 10px; /* Espaciado interno alrededor de los botones */
+  width: 100%; /* Hace que el contenedor ocupe todo el ancho disponible */
+  flex-direction: row; /* Organiza los botones en una fila (horizontal) */
+}
+
+
+button {
+  padding: 8px 12px; /* Espaciado interno de los botones */
+  border-radius: 5px; /* Esquinas redondeadas */
+  color: white; /* Texto blanco */
+  cursor: pointer; /* Cursor tipo puntero */
+  transition: background-color 0.3s; /* Transición suave en color de fondo */
+}
+
+#completa {
+  background-color: #28a745; /* Color de fondo verde */
+  border-color: #50db70;
+  
+}
+
+#completa:hover {
+  background-color: #218838; /* Color más oscuro al pasar el mouse */
+}
+
+#eliminada {
+  background-color: #dc3545; /* Color de fondo rojo */
+  border-color:  #e06d79;
+}
+
+#eliminada:hover {
+  background-color: #c82333; /* Color más oscuro al pasar el mouse */
+}

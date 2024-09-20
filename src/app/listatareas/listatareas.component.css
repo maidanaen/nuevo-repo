@@ -1,0 +1,78 @@
+/* Contenedor principal de la lista de tareas */
+.lista-tareas {
+  max-width: 80%; /* Limita el ancho máximo del contenedor al 80% del ancho disponible */
+  margin: 20px; /* Añade un margen de 20px alrededor del contenedor */
+  padding: 15px; /* Espaciado interno para dar espacio dentro del contenedor */
+  border: 1px solid #ccc; /* Borde gris claro alrededor del contenedor */
+  border-radius: 8px; /* Esquinas redondeadas para un aspecto más suave */
+  background-color: #f9f9f9; /* Color de fondo gris claro */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+}
+
+/* Estilo para elementos div vacíos */
+div:empty {
+  text-align: center; /* Centra el texto horizontalmente en divs vacíos */
+  font-size: 1.2rem; /* Aumenta el tamaño de la fuente ligeramente */
+  color: #666; /* Color de texto gris */
+}
+
+/* Estilo para cada tarea en la lista */
+.tarea {
+  display: flex; /* Utiliza flexbox para alinear elementos internos en fila */
+  padding: 10px 15px; /* Espaciado interno para dar espacio alrededor del contenido */
+  align-items: center; /* Centra los elementos internos verticalmente */
+}
+
+/* Estilo para las tareas completadas */
+.tarea.completada {
+  text-decoration: line-through; /* Aplica una línea a través del texto para indicar que está completada */
+  color: gray; /* Cambia el color del texto a gris */
+}
+
+/* Estilo general para todos los botones */
+button {
+  background-color: #007bff; /* Color de fondo azul para los botones */
+  color: white; /* Color de texto blanco */
+  border: none; /* Elimina el borde predeterminado */
+  border-radius: 5px; /* Esquinas redondeadas para un aspecto más suave */
+  padding: 5px 10px; /* Espaciado interno del botón */
+  cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el botón */
+  transition: background-color 0.3s; /* Transición suave para el cambio de color al pasar el cursor */
+}
+
+/* Cambia el color del botón al pasar el cursor */
+button:hover {
+  background-color: #0056b3; /* Fondo más oscuro al pasar el cursor sobre el botón */
+}
+
+/* Contenedor de la sección para agregar nuevas tareas */
+.agregar-tareas {
+  margin-top: 15px; /* Espaciado superior para separar del contenido anterior */
+}
+
+/* Estilo para los campos de entrada */
+input {
+  padding: 10px; /* Espaciado interno del input */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px; /* Esquinas redondeadas */
+  width: calc(100% - 22px); /* Ancho del 100% menos el padding del contenedor */
+  margin-right: 5px; /* Espacio a la derecha para separar del botón */
+}
+
+/* Estilo específico para el botón dentro del contenedor agregar-tareas */
+.agregar-tareas button {
+  background-color: #28a745; /* Color de fondo verde para el botón de agregar */
+}
+
+/* Cambia el color del botón agregar al pasar el cursor */
+.agregar-tareas button:hover {
+  background-color: #218838; /* Fondo verde más oscuro al pasar el cursor sobre el botón de agregar */
+}
+
+/* Estilo para el mensaje "No hay tareas por hacer" */
+.mensaje {
+  text-align: center; /* Centra el texto horizontalmente */
+  font-size: 18px; /* Tamaño de fuente más grande para destacar el mensaje */
+  font-weight: bold; /* Texto en negrita para mayor énfasis */
+  color: #555; /* Color de */
+}
