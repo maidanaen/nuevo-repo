@@ -30,7 +30,7 @@
 
 /* Cambia el color de fondo del botón cuando se pasa el cursor */
 .tarea-button:hover {
-  background-color: #7ab4ac; /* Fondo más oscuro cuando se pasa el cursor */
+  background-color: #75b6ad; /* Fondo más oscuro cuando se pasa el cursor */
 }
 
 /* Asegura que el input y el botón se adapten bien en pantallas pequeñas */
