@@ -3,9 +3,11 @@
 <div *ngIf="tareas.length === 0" class="mensaje">¡No hay tareas por hacer!</div>
 <div class="conteiner-tareas">
   <div *ngFor="let tarea of tareas" class="tarea">
+    <strong>{{ tarea.id }}.</strong> 
     <app-tarea [tarea]="tarea" 
                (eliminarTarea)="eliminarTarea($event) "  
                (completarTarea)="completarTarea($event)" >
+               
     </app-tarea>
   </div>
 </div>

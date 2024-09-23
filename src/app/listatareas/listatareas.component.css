@@ -76,3 +76,8 @@ input {
   font-weight: bold; /* Texto en negrita para mayor énfasis */
   color: #555; /* Color de */
 }
+.conteiner-tareas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

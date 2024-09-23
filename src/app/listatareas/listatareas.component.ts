@@ -14,13 +14,16 @@ import { CommonModule } from '@angular/common'; // Importa CommonModule para uti
 })
 export class ListatareasComponent {
   tareas: ITarea[] = []; // Inicializa un arreglo de tareas utilizando la interfaz ITarea
+  contadorId: number = 1; // Contador inicial para los IDs
 
-  // Método para agregar una nueva tarea
-  agregarTarea(titulo: string): void {
-    const nuevaTarea = new Tarea(Date.now(), titulo); // Crea una nueva instancia de Tarea con un ID único y el título proporcionado
-    this.tareas.push(nuevaTarea); // Agrega la nueva tarea al arreglo de tareas
+  // Método para agregar una tarea
+  agregarTarea(nombre: string) {
+    if (nombre.trim()) {
+      const nuevaTarea = new Tarea(this.contadorId, nombre, false);
+      this.tareas.push(nuevaTarea);
+      this.contadorId++; // Incrementa el contador después de agregar la tarea
+    }
   }
-
   // Método para eliminar una tarea por su ID
   eliminarTarea(id: number): void {
     this.tareas = this.tareas.filter(t => t.id !== id); // Filtra el arreglo de tareas para eliminar la tarea con el ID especificado

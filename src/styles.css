@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe el 100% de la altura de la pantalla */
+  }
+
+  /* El contenedor principal de la aplicación debe expandirse */
+  app-root {
+    flex: 1; /* Se expande para ocupar el espacio disponible */
+    padding: 20px;
+  }
+
+  /* Estilo del footer para que se quede al final */
+  footer {
+    background-color: #f8f8f8;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #ddd;
+  }
